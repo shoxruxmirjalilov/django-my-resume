@@ -22,19 +22,7 @@ def contact(request):
         email = request.POST.get('email')
         send_mail(subject,
             message, EMAIL_HOST_USER, [email], fail_silently = False)  
-        form = MyCommentForm(request.POST)
-
-        account_sid = 'AC6049ea1cda2adee0b79942603c6ba08d'
-        auth_token = 'ff0c3308ab303d30a2909455e7bdbb48'
-        client = Client(account_sid, auth_token)
-
-        message = client.messages \
-                        .create(
-                            body="Yangi xabar ma'lumotlar omboriga muvafaqiyatli tarzda saqlandi! Ma'lumotlar omborini tekshiring!",
-                            from_='+14438927078',
-                            to='+998971401717'
-                        )    
-
+        form = MyCommentForm(request.POST)     
         if form.is_valid():
             model_instance = form.save(commit=False)
             model_instance.timestamp = timezone.now()
