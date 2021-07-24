@@ -1,0 +1,465 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Shoxrux Mirjalilov</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+  <link href="{% static 'assets/img/icons.png' %}" rel="icon">
+  
+
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  
+
+ <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <header id="header" class="d-flex flex-column justify-content-center">
+   
+ 
+    <nav id="navbar" class="navbar nav-menu">
+      
+      <ul>
+        
+        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+        <li><a href="{% url 'contact' %}" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  
+ 
+  <section id="hero" class="d-flex flex-column justify-content-center">
+    
+    <nav class="navbar navbar-light ">
+      <div class="container-fluid">
+        <form class="d-flex nav-link scrollto" action="/search/" method="get">
+          {% csrf_token %}
+          <input class="form-control me-2" name="q" type="search" placeholder="Search for posts" aria-label="Search" required>
+          <button class="btn btn-outline-primary" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+  
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">      
+      <h1>Shoxrux Mirjalilov</h1>
+      <p>I'm <span class="typed" data-typed-items="Developer, Freelancer"></span></p>
+      <div class="social-links">
+        <a href="https://twitter.com/shxrxmrjll" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.facebook.com/shxrxmrjll" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://instagram.com/shxrxmrjll" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://vk.com/shxrxmrjll" class="twitter"><i class="bx bxl-vk"></i></a>    
+        <a href="https://t.me/shoxruxmirjalilov" class="twitter"><i class="bx bxl-telegram"></i></a>
+        <a href="https://t.me/shxrxmrjll" class="twitter"><i class="bx bxl-telegram"></i></a>
+        <a href="https://www.youtube.com/channel/UCZcbgceYfze-zBjLd39gh7w" class="twitter"><i class="bx bxl-youtube"></i></a>
+        <a href="https://youtube.com/channel/UCcpJ43fpGrwnpYwujcHP61g" class="twitter"><i class="bx bxl-youtube"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <div  id="searchnav">
+    
+  </div>
+
+  <main id="main">
+
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          
+          <h2>ABOUT</h2>
+          <p>SHOXRUX MIRJALILOV</p>
+        </div>
+
+        <div class="row">
+         <div class="col-lg-4">          
+              <img src="{% static 'assets/img/profile.jpg' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content">
+            <h3>Python & Web Developer</h3>
+            
+            <p class="fst-italic">
+             __________________________________________________
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>15 June 2001</span></li> 
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.shokhrukh.uz</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+998 97 140 1717</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+998 33 130 1717</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Tashkent, UZBEKISTAN</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>20</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>muattar@shokhrukh.uz</span></li>
+                  
+                </ul>
+              </div>
+            </div>
+            <p>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <div> 
+      <br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    
+
+    <section id="resume" class="resume">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+        </div>
+
+        <section id="skills" class="skills section-bg">
+          <div class="container" data-aos="fade-up">
+    
+            <div class="section-title">
+              <p> Backend Developer</p>
+            </div>
+    
+            <div class="row skills-content">
+    
+              <div class="col-lg-6">
+    
+                <div class="progress">
+                  <span class="skill">HTML <i class="val">100%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+    
+                <div class="progress">
+                  <span class="skill">CSS <i class="val">80%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+    
+                <div class="progress">
+                  <span class="skill">JavaScript <i class="val">70%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="progress">
+                  <span class="skill">SQL MYSQL, POSTGRESQL <i class="val">100%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+    
+              </div>
+    
+              <div class="col-lg-6">
+    
+                <div class="progress">
+                  <span class="skill">Python <i class="val">100%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="progress">
+                  <span class="skill">framework Django (flask) <i class="val">100%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+    
+                <div class="progress">
+                  <span class="skill">GIT <i class="val">100%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+    
+                <div class="progress">
+                  <span class="skill">LINUX <i class="val">100%</i></span>
+                  <div class="progress-bar-wrap">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+    
+              </div>
+    
+            </div>
+    
+          </div>
+        </section>    
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="resume-title">Sumary</h3>
+            <div class="resume-item pb-0">
+              <h4>Shoxrux Mirjalilov</h4>
+              <p><em></em></p>
+              <ul>
+                <li>Tashkent, Uzbekistan</li>
+                <li>(97) 140-1717</li>
+                <li>info@shokhrukh.uz</li>
+              </ul>
+            </div>
+            
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Python &amp; Web Developer</h4>
+              <h5>2021</h5>
+              <p><em>ZO`R TA`LIM, Miracle Academy</em></p>
+              <p></p>
+            </div>
+            <div class="resume-item">
+              
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h3 class="resume-title">Professional Experience</h3>
+            
+            <div class="resume-item">
+              <h4>PYTHON DEVELOPER specialist</h4>
+              <h5>2021</h5>
+              <p><em>Tashkent</em></p>
+              <ul>
+              </ul>
+            </div>
+            <div class="resume-item">
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container" data-aos="fade-up">
+       
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>My portfolio</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">Portfolio</li>   
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/sms-dj.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>portfolio</h4>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/sms-dj.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="portfolio"><i class="bx bx-plus"></i></a>
+                  <a href=" https://shoxrux-sms.herokuapp.com/" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/new-post.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>portfolio</h4>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/new-post.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="portfolio"><i class="bx bx-plus"></i></a>
+                  <a href="https://shoxrux-blog.herokuapp.com/"  data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/contact.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>portfolio</h4>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/contact.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="portfolio"><i class="bx bx-plus"></i></a>
+                  <a href="https://project-django-main.herokuapp.com/" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/login.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>portfolio</h4>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/login.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="portfolio"><i class="bx bx-plus"></i></a>
+                  <a href="#."  data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/Capture.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>portfolio</h4>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/Capture.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="portfolio"><i class="bx bx-plus"></i></a>
+                  <a href="https://email-send-django.herokuapp.com/"  data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/cours.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>portfolio</h4>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/cours.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="portfolio"><i class="bx bx-plus"></i></a>
+                  <a href="#."  data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/reset-pass.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>portfolio</h4>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/reset-pass.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="portfolio"><i class="bx bx-plus"></i></a>
+                  <a href="https://shoxrux-blog.herokuapp.com/" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/video-post.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>portfolio</h4>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/video-post.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="portfolio"><i class="bx bx-plus"></i></a>
+                  <a href="https://shoxrux-blog.herokuapp.com/"  data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/sign-up.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>portfolio</h4>
+                <div class="portfolio-links">
+                  <a href="{% static 'assets/img/sign-up.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="portfolio"><i class="bx bx-plus"></i></a>
+                  <a href="https://shoxrux-blog.herokuapp.com/"  data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  
+    
+    <div class="container text-white">
+      
+      <h1 style="color: darkblue;">The posts</h1>
+      {% for post in post %}
+      <div><br><br><br></div>
+        <div class="col-md-8 mt-4 mb-4" style="background-color:#b5ccff48; border-radius: 20px;">
+          <h3 style="margin-top: 20px; margin-left: 45px; color: brown;">{{post.title}}</h3>
+          <p class="text-center mt-2 mb-2" style="color: blue;">{{post.summary}}...   <a href="{% url 'post' post.pk %}" class="text-center mt-2 mb-2" >READ MORE </a></p>
+          
+        </div>
+      {% endfor %}
+    </div>
+     <div> 
+       <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+     </div>     
+  </main>
+
+  <footer id="footer">
+    <div class="container">
+      <h3>Shoxrux Mirjalilov</h3>
+      
+      <div class="social-links">
+        <a href="https://twitter.com/shxrxmrjll" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.facebook.com/shxrxmrjll" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://instagram.com/shxrxmrjll" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://vk.com/shxrxmrjll" class="twitter"><i class="bx bxl-vk"></i></a>    
+        <a href="https://t.me/shoxruxmirjalilov" class="twitter"><i class="bx bxl-telegram"></i></a>
+        <a href="https://t.me/shxrxmrjll" class="twitter"><i class="bx bxl-telegram"></i></a>
+        <a href="https://www.youtube.com/channel/UCZcbgceYfze-zBjLd39gh7w" class="twitter"><i class="bx bxl-youtube"></i></a>
+        <a href="https://youtube.com/channel/UCcpJ43fpGrwnpYwujcHP61g" class="twitter"><i class="bx bxl-youtube"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span><a href="https://instagram.com/shxrxmrjll">Shoxrux</a>  2021</span></strong>
+      </div>
+      
+    </div>
+  </footer>
+
+  
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+
+  <script src="{% static 'assets/vendor/purecounter/purecounter.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/typed.js/typed.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js' %}"></script>
+ 
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Shoxrux Mirjalilov</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+  <link href="{% static 'assets/img/icons.png' %}" rel="icon">
+  
+
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  
+
+ <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <header id="header" class="d-flex flex-column justify-content-center">
+   
+ 
+    <nav id="navbar" class="navbar nav-menu">
+      
+      <ul>
+        
+        <li><a href="{% url 'index' %}" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+         <li><a href="{% url 'contact' %}" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  
+ 
+  <section id="hero" class="d-flex flex-column justify-content-center">
+    
+    <nav class="navbar navbar-light ">
+      <div class="container-fluid">
+        <form class="d-flex nav-link scrollto" action="/search/" method="get">
+          {% csrf_token %}
+          <input class="form-control me-2" name="q" type="search" placeholder="Search portfolio" aria-label="Search" required>
+          <button class="btn btn-outline-primary" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+  
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">      
+      <h1>Shoxrux Mirjalilov</h1>
+      <p>I'm <span class="typed" data-typed-items="Developer, Freelancer"></span></p>
+      <div class="social-links">
+        <a href="https://twitter.com/shxrxmrjll" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.facebook.com/shxrxmrjll" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://instagram.com/shxrxmrjll" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://vk.com/shxrxmrjll" class="twitter"><i class="bx bxl-vk"></i></a>    
+        <a href="https://t.me/shoxruxmirjalilov" class="twitter"><i class="bx bxl-telegram"></i></a>
+        <a href="https://t.me/shxrxmrjll" class="twitter"><i class="bx bxl-telegram"></i></a>
+        <a href="https://www.youtube.com/channel/UCZcbgceYfze-zBjLd39gh7w" class="twitter"><i class="bx bxl-youtube"></i></a>
+        <a href="https://youtube.com/channel/UCcpJ43fpGrwnpYwujcHP61g" class="twitter"><i class="bx bxl-youtube"></i></a>
+      </div>
+    </div>
+  </section>
+  <div><br><br><br></div>
+  <div class="container text-white">
+      
+    <h1 style="color: darkblue;">Search results</h1>
+    {% for post in post %}
+    <div><br><br><br></div>
+      <div class="col-md-8 mt-4 mb-4" style="background-color:#b5ccff48; border-radius: 20px;">
+        <h3 style="margin-top: 20px; margin-left: 45px; color: brown;">{{post.title}}</h3>
+        <p class="text-center mt-2 mb-2" style="color: blue;">{{post.summary}}...   <a href="{% url 'post' post.pk %}" class="text-center mt-2 mb-2" >READ MORE </a></p>
+        
+      </div>
+    {% endfor %}
+  </div>
+   <div> 
+     <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   </div> 
+
+  <footer id="footer">
+    <div class="container">
+      <h3>Shoxrux Mirjalilov</h3>
+      
+      <div class="social-links">
+        <a href="https://twitter.com/shxrxmrjll" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.facebook.com/shxrxmrjll" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://instagram.com/shxrxmrjll" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://vk.com/shxrxmrjll" class="twitter"><i class="bx bxl-vk"></i></a>    
+        <a href="https://t.me/shoxruxmirjalilov" class="twitter"><i class="bx bxl-telegram"></i></a>
+        <a href="https://t.me/shxrxmrjll" class="twitter"><i class="bx bxl-telegram"></i></a>
+        <a href="https://www.youtube.com/channel/UCZcbgceYfze-zBjLd39gh7w" class="twitter"><i class="bx bxl-youtube"></i></a>
+        <a href="https://youtube.com/channel/UCcpJ43fpGrwnpYwujcHP61g" class="twitter"><i class="bx bxl-youtube"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span><a href="https://instagram.com/shxrxmrjll">Shoxrux</a>  2021</span></strong>
+      </div>
+      
+    </div>
+  </footer>
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+
+  <script src="{% static 'assets/vendor/purecounter/purecounter.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/typed.js/typed.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js' %}"></script>
+ 
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
