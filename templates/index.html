@@ -46,7 +46,6 @@
         <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
         <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
         <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
         <li><a href="{% url 'contact' %}" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
       </ul>
     </nav>
@@ -101,7 +100,7 @@
 
         <div class="row">
          <div class="col-lg-4">          
-              <img src="{% static 'assets/img/profile.jpg' %}" class="img-fluid" alt="">
+              <img src="" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
             <h3>Python & Web Developer</h3>
@@ -266,144 +265,7 @@
       </div>
     </section><!-- End Resume Section -->
 
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container" data-aos="fade-up">
-       
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>My portfolio</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">Portfolio</li>   
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="{% static 'assets/img/sms-dj.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>portfolio</h4>
-                <div class="portfolio-links">
-                  <a href="{% static 'assets/img/sms-dj.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="portfolio"><i class="bx bx-plus"></i></a>
-                  <a href=" https://shoxrux-sms.herokuapp.com/" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="{% static 'assets/img/new-post.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>portfolio</h4>
-                <div class="portfolio-links">
-                  <a href="{% static 'assets/img/new-post.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="portfolio"><i class="bx bx-plus"></i></a>
-                  <a href="https://shoxrux-blog.herokuapp.com/"  data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="{% static 'assets/img/contact.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>portfolio</h4>
-                <div class="portfolio-links">
-                  <a href="{% static 'assets/img/contact.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="portfolio"><i class="bx bx-plus"></i></a>
-                  <a href="https://project-django-main.herokuapp.com/" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="{% static 'assets/img/login.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>portfolio</h4>
-                <div class="portfolio-links">
-                  <a href="{% static 'assets/img/login.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="portfolio"><i class="bx bx-plus"></i></a>
-                  <a href="#."  data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="{% static 'assets/img/Capture.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>portfolio</h4>
-                <div class="portfolio-links">
-                  <a href="{% static 'assets/img/Capture.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="portfolio"><i class="bx bx-plus"></i></a>
-                  <a href="https://email-send-django.herokuapp.com/"  data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="{% static 'assets/img/cours.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>portfolio</h4>
-                <div class="portfolio-links">
-                  <a href="{% static 'assets/img/cours.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="portfolio"><i class="bx bx-plus"></i></a>
-                  <a href="#."  data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="{% static 'assets/img/reset-pass.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>portfolio</h4>
-                <div class="portfolio-links">
-                  <a href="{% static 'assets/img/reset-pass.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="portfolio"><i class="bx bx-plus"></i></a>
-                  <a href="https://shoxrux-blog.herokuapp.com/" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="{% static 'assets/img/video-post.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>portfolio</h4>
-                <div class="portfolio-links">
-                  <a href="{% static 'assets/img/video-post.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="portfolio"><i class="bx bx-plus"></i></a>
-                  <a href="https://shoxrux-blog.herokuapp.com/"  data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="{% static 'assets/img/sign-up.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>portfolio</h4>
-                <div class="portfolio-links">
-                  <a href="{% static 'assets/img/sign-up.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="portfolio"><i class="bx bx-plus"></i></a>
-                  <a href="https://shoxrux-blog.herokuapp.com/"  data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>  
+   
     
     <div class="container text-white">
       
